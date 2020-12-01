@@ -6,19 +6,7 @@
 #include <stdlib.h>
 #include <getopt.h>
 #include <limits.h>
-
-#ifndef USE_MIPS32
-
 #include "mcfunctions.h"
-
-#else 
-
-#include <unistd.h>
-
-extern unsigned int mcm(unsigned int m, unsigned int n);
-extern unsigned int mcd(unsigned int m, unsigned int n);
-
-#endif /* USE_MIPS32 */ 
 
 #define SUCCESS 0
 #define ERROR -1
